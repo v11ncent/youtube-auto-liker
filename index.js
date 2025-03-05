@@ -1,8 +1,8 @@
 const log = (message) => {
   const tag = 'YouTube Auto Liker';
-  const date = new Date().toLocaleTimeString();
-  const time = date.substring(0, date.length - 3); // Remove ' AM' and ' PM' from datetime string
-  console.log(`[${tag}][${time}] ${message}`);
+  const time = new Date().toLocaleTimeString();
+  const formattedTime = date.substring(0, time.length - 3); // Remove ' AM' and ' PM' from datetime string
+  console.log(`[${tag}][${formattedTime}] ${message}`);
 }
 
 const likeVideo = (button) => {
